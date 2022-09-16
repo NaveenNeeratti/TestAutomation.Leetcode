@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">TestAutomationSuite</th></tr>
+<tr><td><a href="#t0">FunctionalTesting</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">83,716</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TestAutomationSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">FunctionalTesting &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">com.qa.testscripts.TC_ProblemsDropdown_004</td><td><a href="#m0">SignIn</a></td><td rowspan="1">1663140895757</td><td rowspan="1">12194</td></tr><tr class="failedeven"><td><a href="#m1">dropdownSelection</a></td><td rowspan="3">1663140918885</td><td rowspan="3">10044</td></tr><tr class="failedeven"><td><a href="#m2">dropdownSelection</a></td></tr><tr class="failedeven"><td><a href="#m3">dropdownSelection</a></td></tr><tr><th colspan="4">FunctionalTesting &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.testscripts.TC_ProblemsDropdown_004</td><td><a href="#m4">initialiseExpectedResult</a></td><td rowspan="1">1663140907977</td><td rowspan="1">0</td></tr><tr class="passedodd"><td rowspan="6">com.qa.testscripts.TC_ProblemsSearchTag_008</td><td><a href="#m5">SignIn</a></td><td rowspan="1">1663140944012</td><td rowspan="1">16004</td></tr><tr class="passedodd"><td><a href="#m6">initExpectedResult</a></td><td rowspan="1">1663140960017</td><td rowspan="1">1</td></tr><tr class="passedodd"><td><a href="#m7">searchTag</a></td><td rowspan="4">1663140960234</td><td rowspan="4">3388</td></tr><tr class="passedodd"><td><a href="#m8">searchTag</a></td></tr><tr class="passedodd"><td><a href="#m9">searchTag</a></td></tr><tr class="passedodd"><td><a href="#m10">searchTag</a></td></tr></tbody>
+</table>
+<h2>FunctionalTesting</h2><h3 id="m0">com.qa.testscripts.TC_ProblemsDropdown_004#SignIn</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]&quot;}
+  (Session info: chrome=105.0.5195.126)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PEGASUS&apos;, ip: &apos;192.168.29.124&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.126, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\neera\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59492}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 90e5674734b95ea3543c522ab0a03d25
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
+	at com.qa.testscripts.TC_Leetcode_SignIn_001.SignIn(TC_Leetcode_SignIn_001.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.testscripts.TC_ProblemsDropdown_004#dropdownSelection</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>LeetCode Curated SQL 70</td><td>Medium</td><td>Todo</td><td>Database</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.get(Unknown Source)
+	at com.qa.testscripts.TC_ProblemsDropdown_004.dropdownSelection(TC_ProblemsDropdown_004.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.testscripts.TC_ProblemsDropdown_004#dropdownSelection</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Top Interview Questions</td><td>Easy</td><td>Todo</td><td>String</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.get(Unknown Source)
+	at com.qa.testscripts.TC_ProblemsDropdown_004.dropdownSelection(TC_ProblemsDropdown_004.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.testscripts.TC_ProblemsDropdown_004#dropdownSelection</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>LeetCode Curated Algo 170</td><td>Easy</td><td>Todo</td><td>Array</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.get(Unknown Source)
+	at com.qa.testscripts.TC_ProblemsDropdown_004.dropdownSelection(TC_ProblemsDropdown_004.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.qa.testscripts.TC_ProblemsDropdown_004#initialiseExpectedResult</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.qa.testscripts.TC_ProblemsSearchTag_008#SignIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.qa.testscripts.TC_ProblemsSearchTag_008#initExpectedResult</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.qa.testscripts.TC_ProblemsSearchTag_008#searchTag</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>App</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.qa.testscripts.TC_ProblemsSearchTag_008#searchTag</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Ora</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.qa.testscripts.TC_ProblemsSearchTag_008#searchTag</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Del</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.qa.testscripts.TC_ProblemsSearchTag_008#searchTag</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Sales</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
