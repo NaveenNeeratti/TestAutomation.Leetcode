@@ -155,7 +155,7 @@ public class TC_ProblemsDropdown_004 extends TC_Leetcode_SignIn_001{
 				}
 				Thread.sleep(3000);
 				//To check whether it displays correct relevant questions
-				List<WebElement> dropdownResult = dropPage.getDropdownResult().subList(0, 3);
+				List<WebElement> dropdownResult = dropPage.getDropdownResult().subList(1, 4);
 				for(WebElement item : dropdownResult) {
 					actualResult.add(item.getText());
 				}
@@ -214,13 +214,15 @@ public class TC_ProblemsDropdown_004 extends TC_Leetcode_SignIn_001{
 		expectedTagELe.add("Hash Table");
 		expectedTagELe.add("Dynamic Programming");
 		expectedResult = new ArrayList<String>();
-		expectedResult.add("1457. Pseudo-Palindromic Paths in a Binary Tree");
 		expectedResult.add("163. Missing Ranges");
 		expectedResult.add("170. Two Sum III - Data structure design");
+		expectedResult.add("243. Shortest Word Distance");
 		expectedResult.add("534. Game Play Analysis III");
 		expectedResult.add("550. Game Play Analysis IV");
+		expectedResult.add("570. Managers with at Least 5 Direct Reports");
 		expectedResult.add("13. Roman to Integer");
 		expectedResult.add("14. Longest Common Prefix");
+		expectedResult.add("20. Valid Parentheses");
 		
 	}
 	

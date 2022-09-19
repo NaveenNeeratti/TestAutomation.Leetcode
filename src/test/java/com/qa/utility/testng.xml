@@ -3,11 +3,11 @@
 <suite name="TestAutomationSuite">
 <listeners><listener class-name="com.qa.utility.Reporting"></listener></listeners>
 <parameter name="Url" value="https://leetcode.com"></parameter>
-  <test thread-count="5" name="FunctionalTesting">
+  <test thread-count="5" name="FunctionalTesting" preserve-order="true">
 <parameter name="Browser" value="Chrome"></parameter>
 <classes>
-<class name="com.qa.testscripts.TC_ProblemsDropdown_004"></class>
 <class name="com.qa.testscripts.TC_ProblemsSearchTag_008"></class>
+<class name="com.qa.testscripts.TC_ProblemsDropdown_004"></class>
 </classes>
   </test> <!-- FunctionalTesting -->
 </suite> <!-- TestAutomationSuite -->
